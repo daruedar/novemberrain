@@ -1,0 +1,42 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Title of the document</title>
+  <script language='javascript'>
+   // Creando un arreglo de Objetos en JS para simular persistencia en BD ****************************************************************************
+	function Libro(nombre,referencia,ubicacion){this.nombre=nombre;this.referencia=referencia;this.ubicacion=ubicacion;}//Funcion tipo constructor
+	//var libro1=new Libro('Algebra Superior','512 H176a2','Biblioteca Publica Piloto');
+	var libros=Array();
+	libros[0]= new Libro('Fundamentos Fisicos de la Ingenieria','PB.G. 621.3 M636f g','Biblioteca Parque');
+	libros[1]= new Libro('Algebra Superior','512 H176a2','Biblioteca Publica Piloto');
+	libros[2]= new Libro('Calculo Una Variable','515 S851 CA pag 281','Biblioteca Publica Piloto');
+	libros[3]= new Libro('Metodos Numericos con Matlab','519.4 M429m','Biblioteca Publica Piloto');
+	libros[4]= new Libro('Fundamentos físicos de la ingeniería','621.3 M636f ','Biblioteca Parque Guayabal Manuel Mejia Vallejo');
+	libros[5]= new Libro('Calculo trascendentes tempranas 4 edicion','515Z69 ','Biblioteca Parque Guayabal Manuel Mejia Vallejo');
+	
+	var salida="";
+	for(var  i=0;i<libros.length;i++){
+	salida+=libros[i].nombre+"   "+libros[i].referencia+"   "+libros[i].ubicacion+"</br>";
+	}
+	document.write(salida);
+	//alert(salida);
+	
+	//alert(productos[3].nombre+'    '+ productos[2].nombre);
+	// iNTENTE CREAR EL OBJETO DIRECTAMENTE SIN VARIABLE AUXILIAR  pero no compilo correctamente
+	// TEnia  razon, si es posible crear arreglos de objetos usando este stylo
+	// ********************************************************************
+  </script>
+
+</head>
+
+<body>
+<h1>Actividades Pendientes</h1>
+<h2> jueves 14 de noviembre a las 2:00 p.m. tendremos la reunión con los admitidos al programa de Ingeniería de Telecomunicaciones dentro del curso Con TIC aprendo. En este espacio se brindará una información general del programa y resolveremos inquietudes respecto al semestre que inicia el próximo lunes 18 de noviembre, asi como dificultades del proceso de matricula que ya pasó y los ajustes que mañana inician.  
+
+La dirección del curso Con TIC aprendo es: 
+ https://udearroba.udea.edu.co/internos/course/view.php?id=2750 </h2>
+ <a href="https://udearroba.udea.edu.co/internos/course/view.php?id=2750">
+	Curso aqui
+ </a>
+</body>
+</html>
